@@ -1,0 +1,43 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  details: MyText
+  type: 1
+  min_booking_time: 1
+  max_occupancy: 1
+  availability_hours: 1
+  booking_request_time: MyString
+  integer: MyString
+  past_clients: MyString
+  audio_samples: MyString
+  amenities: MyString
+  equipment: MyString
+  rules: MyText
+  cancellation_policy: MyText
+  addess: MyText
+  price_per_hour: MyString
+  decimal: MyString
+  discount: 1
+  user: one
+
+two:
+  name: MyString
+  details: MyText
+  type: 1
+  min_booking_time: 1
+  max_occupancy: 1
+  availability_hours: 1
+  booking_request_time: MyString
+  integer: MyString
+  past_clients: MyString
+  audio_samples: MyString
+  amenities: MyString
+  equipment: MyString
+  rules: MyText
+  cancellation_policy: MyText
+  addess: MyText
+  price_per_hour: MyString
+  decimal: MyString
+  discount: 1
+  user: two
