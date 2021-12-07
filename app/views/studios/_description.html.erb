@@ -1,0 +1,75 @@
+<h1>Add your studio</h1>
+<%= form_for(@studio) do |f| %>
+  <div class="form-group">
+    <%= f.label :studio_name %><br>
+    <%= f.text_field :name, class: 'form-control', placeholder:"What's the name of the studio?"%>
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    <br>
+    <br>
+    <%= f.label :studio_details %>
+    <%= f.text_area :details, class: 'form-control', placeholder:"Please enter the detailed description of your studio here"%>
+    <br>
+    <%= f.label :studio_type %><br/>
+    <ul style="list-style: none; padding-left: 0px; line-height: 1.8;">
+      <li>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Rehearsal Space
+          </label>
+        </div>
+      </li>
+      <li>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Podcast Space
+          </label>
+        </div>
+      </li>
+      <li>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Home Studio
+          </label>
+        </div>
+      </li>
+      <li>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Mid-level Studio
+          </label>
+        </div>
+      </li>
+      <li>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Top-Line Studio
+          </label>
+        </div>
+      </li>
+    </ul>
+    <%= f.label :minimum_booking %>
+    <%= f.text_field :name, class: 'form-control'%>
+    <br>
+    <%= f.label :max_studio_occupancy %>
+    <%= f.text_field :name, class: 'form-control'%>
+    <br>
+    <%= f.label :studio_hours %>
+    <%= f.text_field :name, class: 'form-control'%>
+    <br>
+    <%= f.label :time_in_advance_requirement_for_booking_requests %>
+    <%= f.text_field :name, class: 'form-control'%>
+    <br>
+    <%= f.label :past_clients %>
+    <%= f.text_field :name, class: 'form-control', placeholder:'List artists who have used your studio here'%>
+    <br>
+    <%= f.label :audio_samples %>
+    <%= f.text_field :name, class: 'form-control', placeholder:'Add SoundCloud, Spotify, etc URL here'%>
+    <br>
+    <%= f.submit 'Next Features', class: 'btn btn-success' %>
+  </div>
+<% end %>
